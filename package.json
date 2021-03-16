@@ -1,0 +1,24 @@
+{
+  "name": "test-software-engineer",
+  "version": "1.0.0",
+  "description": "ComparaOnline Software Engineer Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec/*.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "comparaonline",
+    "test",
+    "software",
+    "engineer"
+  ],
+  "author": "ComparaOnline",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
