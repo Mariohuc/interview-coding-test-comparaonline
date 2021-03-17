@@ -3,9 +3,7 @@ class CarInsurance {
     this.products = products;
   }
   updatePrice() {
-    for (var i = 0; i < this.products.length; i++) {
-      this.products[i].updatePrice();
-    }
+    this.products.forEach((prod) => prod.updatePrice())
     return this.products;
   }
 }

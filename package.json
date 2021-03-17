@@ -4,7 +4,7 @@
   "description": "ComparaOnline Software Engineer Test",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec/*.js",
+    "test": "nyc --reporter=html ./node_modules/.bin/mocha",
     "after-30-days": "node src/after-30-days.js"
   },
   "repository": {
@@ -20,6 +20,8 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.3.4",
-    "mocha": "^8.3.2"
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
   }
 }

@@ -30,12 +30,12 @@ const productPrinter = function (product) {
   data += `${product.name}, ${product.sellIn}, ${product.price}\n`;
 };
 
-data = 'Day 0\nname, sellIn, price\n';
+data = '******** Day 0 ********\nname, sellIn, price\n';
 carInsurance.products.forEach(productPrinter);
 data += '\n';
 
 for (let i = 1; i <= 30; i += 1) {
-  data += `Day ${i}\nname, sellIn, price\n`;
+  data += `******** Day ${i} ********\nname, sellIn, price\n`;
   carInsurance.updatePrice().forEach(productPrinter);
   data += '\n';
 }
