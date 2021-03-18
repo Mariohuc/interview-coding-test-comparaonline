@@ -8,6 +8,19 @@ const { SuperSaleProduct } = require("../src/entities/SuperSaleProduct");
 
 const { CarInsurance } = require("../src/entities/CarInsurance");
 
+describe("CarInsurance tests using EXPECT interface from CHAI module: ", function () {
+  
+  describe("Check constructor method: ", function () {
+    it('Instantiate with no-argument constructor', function(){
+      const ci = new CarInsurance();
+      const products = ci.updatePrice();
+      expect(products.length).to.equal(0);
+    });
+
+  });
+});
+
+
 describe("Product tests using EXPECT interface from CHAI module: ", function () {
   
   describe("Check updatePrice method: ", function () {
